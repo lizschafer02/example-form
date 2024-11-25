@@ -1,0 +1,125 @@
+body {
+    font-family: Emilys Candy, Arial, sans-serif;
+    background-color: #E7E9EB;
+}
+
+h1 {
+    color: #ffffff;
+    margin-left: 10px;
+    text-shadow: 2px 2px #ab4848, 3px 3px #ab4848;
+}
+
+div {
+    padding: 10px;
+}
+
+label:hover {
+    color: #9f4444;
+}
+
+/* Header Styles */
+.header {
+    padding: 60px;
+    text-align: left;
+    background-image: url("../img/rose.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.header p {
+    padding: 0px 10px;
+    color: #e27c7c;
+}
+
+/* Form Styles */
+
+legend {
+    background: #7f293b;
+    border-radius: 5px;
+    color: white;
+    padding: 12px;
+}
+
+fieldset {
+    background-color: #fdfdfd;
+    border: inset 10px #a71951;
+    width: 720px;
+    margin: 20px auto;
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    width: 200px;
+}
+
+.profile-preview {
+    border: solid gray 5px;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    width: auto;
+}
+
+.range-caption {
+    background-color: #7e7e7e;
+    color: white;
+    padding: 6px;
+    text-align: center;
+}
+
+/* Slider Customization */
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ad9d9d;
+    opacity: 0.7;
+    border-radius: 5px;
+    height: 7px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #5d3142;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #5d3142;
+    cursor: pointer;
+}
+
+/* submit button customization */
+
+.submit-button {
+    width: 720px;
+    margin: auto;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #6b6b6b;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 24px;
+    padding: 5px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 3px 3px 8px rgb(0, 0, 0, 0.3);
+}
+
+input[type="submit"]:hover {
+    background-color: #925965;
+}
