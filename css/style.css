@@ -125,7 +125,7 @@ input[type="checkbox"]+label {
 }
 
 input[type="submit"] {
-    background-color: #6b6b6b;
+    background-color: #925965;
     border: none;
     border-radius: 7px;
     color: white;
@@ -136,5 +136,15 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #925965;
+    background-color: #6b6b6b;
+}
+
+/* Mobile Customization */
+
+@media (max-width: 480px) {
+    label {
+        display: inline-block;
+        text-align: left;
+        width: auto;
+    }
 }
