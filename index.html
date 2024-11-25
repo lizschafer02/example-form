@@ -7,7 +7,7 @@
 
     <title>Dating Form</title>
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!--Custom Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,12 +45,21 @@
 
             <div>
                 <label>Gender: </label>
-                <input type="radio" id="woman" name="gender" value="woman">
-                <label for="woman">Woman</label>
-                <input type="radio" id="man" name="gender" value="man">
-                <label for="man">Man</label>
-                <input type="radio" id="unspecified" name="gender" value="unspecified">
-                <label for="unspecified">Unspecified</label>
+
+                <span class="radio-select">
+                    <input type="radio" id="woman" name="gender" value="woman">
+                    <label for="woman">Woman</label>
+                </span>
+
+                <span class="radio-select">
+                    <input type="radio" id="man" name="gender" value="man">
+                    <label for="man">Man</label>
+                </span>
+
+                <span class="radio-select">
+                    <input type="radio" id="unspecified" name="gender" value="unspecified">
+                    <label for="unspecified">Unspecified</label>
+                </span>
             </div>
 
             <div>
@@ -80,9 +89,11 @@
 
             <div>
                 <label for="salary">Salary: </label>
-                <span class="range-caption">Poor</span>
-                <input type="range" id="salary" class="slider" name="salary" min="0" max="100" value="50">
-                <span class="range-caption">Rich</span>
+                <div class="range-display">
+                    <span class="range-caption">Poor</span>
+                    <input type="range" id="salary" class="slider" name="salary" min="0" max="100" value="50">
+                    <span class="range-caption">Rich</span>
+                </div>
             </div>
 
         </fieldset>
@@ -106,14 +117,20 @@
 
             <div>
                 <label>Contact Method:</label>
-                <input type="checkbox" name="contact" id="emailCheckbox" value="email">
-                <label for="emailCheckbox">Email</label>
-                <input type="checkbox" name="contact" id="phoneCheckbox" value="phone">
-                <label for="phoneCheckbox">Phone</label>
+
+                <span class="check-select">
+                    <input type="checkbox" name="contact" id="emailCheckbox" value="email">
+                    <label for="emailCheckbox">Email</label>
+                </span>
+
+                <span class="check-select">
+                    <input type="checkbox" name="contact" id="phoneCheckbox" value="phone">
+                    <label for="phoneCheckbox">Phone</label>
+                </span>
             </div>
 
         </fieldset>
-        
+
         <div class="submit-button">
             <input type="submit" id="submit_btn" value="submit">
         </div>

@@ -24,6 +24,7 @@ label:hover {
     background-image: url("../img/rose.jpg");
     background-size: cover;
     background-position: center;
+    min-width: 200px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     font-size: larger;
@@ -46,7 +47,8 @@ legend {
 fieldset {
     background-color: #fdfdfd;
     border: inset 10px #a71951;
-    width: 720px;
+    max-width: 720px;
+    min-width: 300px;
     margin: 20px auto;
 }
 
@@ -66,11 +68,23 @@ input[type="checkbox"]+label {
     width: auto;
 }
 
+.radio-select {
+    display: inline-block;
+}
+
+.check-select {
+    display: inline-block;
+}
+
 .range-caption {
     background-color: #7e7e7e;
     color: white;
     padding: 6px;
     text-align: center;
+}
+
+.range-display {
+    display: inline-block;
 }
 
 /* Slider Customization */
@@ -104,7 +118,8 @@ input[type="checkbox"]+label {
 /* submit button customization */
 
 .submit-button {
-    width: 720px;
+    max-width: 720px;
+    min-width: 300px;
     margin: auto;
     text-align: center;
 }
